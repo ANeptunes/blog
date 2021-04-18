@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>分类修改</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+        <link rel="stylesheet" href="../../static/css/adminmycss.css" th:href="@{/css/adminmycss.css}">
+    </head>
+
+    <body>
+
+        <!-- 导航栏 -->
+        <nav class="ui inverted attached segment my-padded-th-mini my-shadow-small">
+            <div class="ui container">
+                <div class="ui inverted secondary stackable menu">
+                    <h2 class="ui teal header item">Admin-X</h2>
+                    <a href="#" th:href="@{/admin/blogs}" class="item my-item my-mobile-hide"><i class="home icon"></i>博客</a>
+                    <a href="#" th:href="@{/admin/types}" class="active item my-item my-mobile-hide"><i
+                            class="idea icon"></i>分类</a>
+                    <a href="#" th:href="@{/admin/tags}" class="item my-item my-mobile-hide"><i class="tags icon"></i>标签</a>
+                    <div class="right my-item my-mobile-hide menu">
+                        <div class="ui dropdown item">
+                            <div class="text">
+                                <img src="https://picsum.photos/id/1004/100/100" th:src="@{${session.user.avatar}}" alt="" class="ui avatar image">
+                                <span th:text="${session.user.nickname}">qyt</span>
+                            </div>
+                            <i class="dropdown icon"></i>
+                            <div class="menu">
+                                <a href="#" th:href="@{/admin/logout}" class="item">注销</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" id="menu_toggle" class="ui menu black icon button my-sidebar-right-top my-mobile-show">
+                <i class="sidebar icon"></i>
+            </a>
+        </nav>
+
+        <!-- 二级导航 -->
+        <div class="ui attached pointing menu" style="opacity: 0.86">
+            <div class="ui container">
+                <div class="right menu">
+                    <a href="#" th:href="@{/admin/types/input}" class="item">新增</a>
+                    <a href="#" th:href="@{/admin/types}" class="item">列表</a>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <!-- 中间内容 -->
+        <div class="my-container-small my-padded-tb-big">
+            <div class="ui container">
+                <form action="#" th:action="@{/admin/editType/{id}(id=*{id})}" method="POST" class="ui form"
+                      th:object="${type}">
+                    <input type="hidden" name="id" th:value="*{id}">
+                    <div class="required field">
+                        <div class="ui left labeled input">
+                            <label class="ui teal basic label">名称</label>
+                            <input type="text" name="name" placeholder="分类名称" th:value="*{name}">
+                        </div>
+                    </div>
+
+                    <!--/*/
+                    <div class="ui negative message" th:if="${#fields.hasErrors('name')}">
+                        <i class="close icon"></i>
+                        <div class="header">提示:</div>
+                        <p th:errors="*{name}">分类名称不能为空</p>
+                    </div>
+                    /*/-->
+
+                    <!-- 发布保存按钮 -->
+                    <div class="ui right aligned container">
+                        <button type="button" class="ui button" onclick="window.history.go(-1)">返回</button>
+                        <button class="ui teal submit button">提交</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <!-- 底部footer -->
+        <footer th:replace="_fragments :: footer" class="ui inverted vertical segment my-padded-tb-massive">
+            <div class="ui center aligned container">
+                <div class="ui inverted divided stackable grid">
+                    <div class="three wide column">
+                        <div class="ui inverted link list">
+                            <div class="item">
+                                <img src="../static/images/wechat.png" th:src="@{/images/wechat.png}" class="ui rounded image my-footer-image" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="three wide column">
+                        <h4 class="ui inverted header my-text-thin my-text-spaced">最新博客</h4>
+                        <div class="ui inverted link list" th:fragment="newBlogList">
+                            <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item" th:each="blog : ${newblogs}" th:text="${blog.title}">数据结构不难</a>
+                        </div>
+                    </div>
+                    <div class="three wide column">
+                        <h4 class="ui inverted header my-text-thin my-text-spaced">联系我</h4>
+                        <div class="ui inverted link list">
+                            <a href="" class="item">Email: 1498768337@qq.com</a>
+                            <a href="" class="item">QQ: 1498768337</a>
+                        </div>
+                    </div>
+                    <div class="seven wide column">
+                        <h4 class="ui inverted header my-text-thin my-text-spaced">Bolg</h4>
+                        <p class="my-text-thin my-text-spaced my-opacity-mini">
+                            这是我的一个个人博客,在这里会分享java技术相关的问题,大家可以在这里学习分享自己的学习历程和经验...</p>
+                    </div>
+                </div>
+                <div class="ui inverted section divider"></div>
+                <p class="my-text-thin my-text-lined my-text-spaced my-opacity-tiny">CopyRight©2021-2022 Blog Designed by
+                    QiuYongTu</p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+
+        <script>
+            $('#menu_toggle').click(function () {
+                $('.my-item').toggleClass('my-mobile-hide');
+            });
+            $('.ui.dropdown').dropdown({
+                on: 'hover'
+            });
+            $('.ui.form').form({
+                on: 'blur',
+                inline: true,
+                fields: {
+                    name: {
+                        identifier: 'name',
+                        rules: [{
+                            type: 'empty',
+                            prompt: '请输入分类名称'
+                        }]
+                    }
+                }
+            });
+            $('.message .close').on('click', function () {
+                $(this).closest('.message').transition('fade');
+            });
+            $('#newblog-container').load(/*[[@{/footer/newblog}]]*/"/footer/newblog");
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,883 @@
+2021-04-13 00:00:17.441  INFO 3404 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.post, args=[Comment(id=null, nickname=12, email=21, content=1212, avatar=null, createTime=null, blog=Blog(id=34, title=null, content=null, firstPicture=null, flag=null, views=null, appreciation=false, shareStatement=false, commentStatus=false, published=false, recommend=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null, description=null), replyComments=[], parentComment=Comment(id=48, nickname=null, email=null, content=null, avatar=null, createTime=null, blog=null, replyComments=[], parentComment=null))])
+2021-04-13 00:00:17.688  INFO 3404 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : Result : redirect:/comments/34
+2021-04-13 00:00:17.688  INFO 3404 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 00:00:17.693  INFO 3404 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 00:00:17.695  INFO 3404 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 00:00:17.696  INFO 3404 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 00:02:49.868  INFO 3404 --- [http-nio-8080-exec-3] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/blog/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.blog, args=[34, {}])
+2021-04-13 00:02:49.872  INFO 3404 --- [http-nio-8080-exec-3] com.qyt.blog.aspect.LogAspect            : Result : blog
+2021-04-13 00:02:49.872  INFO 3404 --- [http-nio-8080-exec-3] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 00:02:53.261  INFO 3404 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/blog/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.blog, args=[34, {}])
+2021-04-13 00:02:53.266  INFO 3404 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : Result : blog
+2021-04-13 00:02:53.266  INFO 3404 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 00:03:18.656  INFO 3404 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.post, args=[Comment(id=null, nickname=测试qyt, email=1498768337@qq.com, content=测试回复, avatar=null, createTime=null, blog=Blog(id=34, title=null, content=null, firstPicture=null, flag=null, views=null, appreciation=false, shareStatement=false, commentStatus=false, published=false, recommend=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null, description=null), replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, createTime=null, blog=null, replyComments=[], parentComment=null))])
+2021-04-13 00:03:18.720  INFO 3404 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : Result : redirect:/comments/34
+2021-04-13 00:03:18.720  INFO 3404 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 00:03:18.726  INFO 3404 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 00:03:18.729  INFO 3404 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 00:03:18.729  INFO 3404 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 00:09:56.242  INFO 3404 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/blog/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.blog, args=[34, {}])
+2021-04-13 00:09:56.248  INFO 3404 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Result : blog
+2021-04-13 00:09:56.248  INFO 3404 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 00:09:56.759  INFO 3404 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 00:09:56.768  INFO 3404 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 00:09:56.768  INFO 3404 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 00:10:03.085  INFO 3404 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 00:10:03.098  WARN 3404 --- [http-nio-8080-exec-7] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-04-13 00:10:03.103  WARN 3404 --- [http-nio-8080-exec-7] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-04-13 00:10:03.108  INFO 3404 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : Result : index
+2021-04-13 00:10:03.108  INFO 3404 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 00:10:04.605  INFO 3404 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/blog/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.blog, args=[34, {}])
+2021-04-13 00:10:04.611  INFO 3404 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : Result : blog
+2021-04-13 00:10:04.612  INFO 3404 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 00:10:05.330  INFO 3404 --- [http-nio-8080-exec-3] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 00:10:05.334  INFO 3404 --- [http-nio-8080-exec-3] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 00:10:05.334  INFO 3404 --- [http-nio-8080-exec-3] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 00:10:09.075  INFO 3404 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/blog/29, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.blog, args=[29, {}])
+2021-04-13 00:10:09.082  INFO 3404 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Result : blog
+2021-04-13 00:10:09.082  INFO 3404 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 00:10:09.733  INFO 3404 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/29, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[29, {}])
+2021-04-13 00:10:09.746  INFO 3404 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 00:10:09.746  INFO 3404 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 00:43:02.234  INFO 16128 --- [restartedMain] com.qyt.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_202 on LAPTOP-M67B77RQ with PID 16128 (D:\JavaStudyCode\project-demo\blog\target\classes started by qyt in D:\JavaStudyCode\project-demo\blog)
+2021-04-13 00:43:02.237 DEBUG 16128 --- [restartedMain] com.qyt.blog.BlogApplication             : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-13 00:43:02.238  INFO 16128 --- [restartedMain] com.qyt.blog.BlogApplication             : The following profiles are active: dev
+2021-04-13 00:43:02.290  INFO 16128 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-13 00:43:02.290  INFO 16128 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-13 00:43:03.283  INFO 16128 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-13 00:43:03.356  INFO 16128 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 5 JPA repository interfaces.
+2021-04-13 00:43:04.251  INFO 16128 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-13 00:43:04.260  INFO 16128 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-13 00:43:04.260  INFO 16128 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-13 00:43:04.400  INFO 16128 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-13 00:43:04.400  INFO 16128 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2109 ms
+2021-04-13 00:43:04.950  INFO 16128 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-13 00:43:05.030  INFO 16128 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-13 00:43:05.296  INFO 16128 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-13 00:43:05.470  INFO 16128 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-13 00:43:05.707  INFO 16128 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-13 00:43:05.762  INFO 16128 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-13 00:43:08.166  INFO 16128 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-13 00:43:08.177  INFO 16128 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-13 00:43:08.247  INFO 16128 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-13 00:43:09.477  WARN 16128 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-13 00:43:09.909  INFO 16128 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-13 00:43:10.021  INFO 16128 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-13 00:43:10.376  INFO 16128 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-13 00:43:10.385  INFO 16128 --- [restartedMain] com.qyt.blog.BlogApplication             : Started BlogApplication in 8.891 seconds (JVM running for 10.525)
+2021-04-13 00:43:11.915  INFO 16128 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-13 00:43:11.915  INFO 16128 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-13 00:43:11.916  INFO 16128 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-13 00:43:11.954  INFO 16128 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/blog/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.blog, args=[34, {}])
+2021-04-13 00:43:12.088  INFO 16128 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Result : blog
+2021-04-13 00:43:12.089  INFO 16128 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 00:43:13.285  INFO 16128 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 00:43:13.379  INFO 16128 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 00:43:13.379  INFO 16128 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 00:43:44.631  INFO 16128 --- [http-nio-8080-exec-3] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.post, args=[Comment(id=null, nickname=qyt, email=1498768337@qq.com, content=回复测试qyt, avatar=null, createTime=null, blog=Blog(id=34, title=null, content=null, firstPicture=null, flag=null, views=null, appreciation=false, shareStatement=false, commentStatus=false, published=false, recommend=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null, description=null), replyComments=[], parentComment=Comment(id=55, nickname=null, email=null, content=null, avatar=null, createTime=null, blog=null, replyComments=[], parentComment=null))])
+2021-04-13 00:43:44.819  INFO 16128 --- [http-nio-8080-exec-3] com.qyt.blog.aspect.LogAspect            : Result : redirect:/comments/34
+2021-04-13 00:43:44.819  INFO 16128 --- [http-nio-8080-exec-3] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 00:43:44.833  INFO 16128 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 00:43:44.862  INFO 16128 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 00:43:44.863  INFO 16128 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 00:43:56.871  INFO 16128 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.post, args=[Comment(id=null, nickname=测试, email=1498768337@qq.com, content=回复qyt, avatar=null, createTime=null, blog=Blog(id=34, title=null, content=null, firstPicture=null, flag=null, views=null, appreciation=false, shareStatement=false, commentStatus=false, published=false, recommend=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null, description=null), replyComments=[], parentComment=Comment(id=56, nickname=null, email=null, content=null, avatar=null, createTime=null, blog=null, replyComments=[], parentComment=null))])
+2021-04-13 00:43:56.949  INFO 16128 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : Result : redirect:/comments/34
+2021-04-13 00:43:56.949  INFO 16128 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 00:43:56.954  INFO 16128 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 00:43:56.973  INFO 16128 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 00:43:56.973  INFO 16128 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 00:44:11.224  INFO 16128 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.post, args=[Comment(id=null, nickname=测试, email=1498768337@qq.com, content=回复qyt, avatar=null, createTime=null, blog=Blog(id=34, title=null, content=null, firstPicture=null, flag=null, views=null, appreciation=false, shareStatement=false, commentStatus=false, published=false, recommend=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null, description=null), replyComments=[], parentComment=Comment(id=57, nickname=null, email=null, content=null, avatar=null, createTime=null, blog=null, replyComments=[], parentComment=null))])
+2021-04-13 00:44:11.371  INFO 16128 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : Result : redirect:/comments/34
+2021-04-13 00:44:11.371  INFO 16128 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 00:44:11.378  INFO 16128 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 00:44:11.395  INFO 16128 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 00:44:11.396  INFO 16128 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 00:46:43.628  INFO 13808 --- [restartedMain] com.qyt.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_202 on LAPTOP-M67B77RQ with PID 13808 (D:\JavaStudyCode\project-demo\blog\target\classes started by qyt in D:\JavaStudyCode\project-demo\blog)
+2021-04-13 00:46:43.630 DEBUG 13808 --- [restartedMain] com.qyt.blog.BlogApplication             : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-13 00:46:43.631  INFO 13808 --- [restartedMain] com.qyt.blog.BlogApplication             : The following profiles are active: dev
+2021-04-13 00:46:43.679  INFO 13808 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-13 00:46:43.679  INFO 13808 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-13 00:46:44.358  INFO 13808 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-13 00:46:44.427  INFO 13808 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 5 JPA repository interfaces.
+2021-04-13 00:46:45.246  INFO 13808 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-13 00:46:45.256  INFO 13808 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-13 00:46:45.256  INFO 13808 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-13 00:46:45.345  INFO 13808 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-13 00:46:45.345  INFO 13808 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1665 ms
+2021-04-13 00:46:45.528  INFO 13808 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-13 00:46:45.574  INFO 13808 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-13 00:46:45.703  INFO 13808 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-13 00:46:45.803  INFO 13808 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-13 00:46:45.992  INFO 13808 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-13 00:46:46.015  INFO 13808 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-13 00:46:47.054  INFO 13808 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-13 00:46:47.064  INFO 13808 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-13 00:46:47.213  INFO 13808 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-13 00:46:48.277  WARN 13808 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-13 00:46:48.650  INFO 13808 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-13 00:46:48.748  INFO 13808 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-13 00:46:49.039  INFO 13808 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-13 00:46:49.050  INFO 13808 --- [restartedMain] com.qyt.blog.BlogApplication             : Started BlogApplication in 5.969 seconds (JVM running for 7.271)
+2021-04-13 00:46:49.185  INFO 13808 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-13 00:46:49.185  INFO 13808 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-13 00:46:49.186  INFO 13808 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-13 00:46:49.228  INFO 13808 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/blog/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.blog, args=[34, {}])
+2021-04-13 00:46:49.384  INFO 13808 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Result : blog
+2021-04-13 00:46:49.384  INFO 13808 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 00:46:50.756  INFO 13808 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 00:46:50.832  INFO 13808 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 00:46:50.833  INFO 13808 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 00:48:21.199  INFO 13808 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/blog/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.blog, args=[34, {}])
+2021-04-13 00:48:21.206  INFO 13808 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : Result : blog
+2021-04-13 00:48:21.206  INFO 13808 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 00:48:21.730  INFO 13808 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 00:48:21.774  INFO 13808 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 00:48:21.775  INFO 13808 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 00:50:36.270  INFO 13808 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/blog/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.blog, args=[34, {}])
+2021-04-13 00:50:36.275  INFO 13808 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : Result : blog
+2021-04-13 00:50:36.275  INFO 13808 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 00:50:36.734  INFO 13808 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 00:50:36.764  INFO 13808 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 00:50:36.764  INFO 13808 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 00:51:25.996  INFO 13808 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/blog/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.blog, args=[34, {}])
+2021-04-13 00:51:26.004  INFO 13808 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : Result : blog
+2021-04-13 00:51:26.004  INFO 13808 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 00:51:26.505  INFO 13808 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 00:51:26.545  INFO 13808 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 00:51:26.546  INFO 13808 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:03:50.664  INFO 13808 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 01:03:50.691  WARN 13808 --- [http-nio-8080-exec-2] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-04-13 01:03:50.700  WARN 13808 --- [http-nio-8080-exec-2] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-04-13 01:03:50.706  INFO 13808 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Result : index
+2021-04-13 01:03:50.707  INFO 13808 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:04:19.663  INFO 13808 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 01:04:19.678  INFO 13808 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : Result : index
+2021-04-13 01:04:19.678  INFO 13808 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:06:14.667  INFO 7216 --- [restartedMain] com.qyt.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_202 on LAPTOP-M67B77RQ with PID 7216 (D:\JavaStudyCode\project-demo\blog\target\classes started by qyt in D:\JavaStudyCode\project-demo\blog)
+2021-04-13 01:06:14.670 DEBUG 7216 --- [restartedMain] com.qyt.blog.BlogApplication             : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-13 01:06:14.670  INFO 7216 --- [restartedMain] com.qyt.blog.BlogApplication             : The following profiles are active: dev
+2021-04-13 01:06:14.729  INFO 7216 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-13 01:06:14.730  INFO 7216 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-13 01:06:15.450  INFO 7216 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-13 01:06:15.522  INFO 7216 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 5 JPA repository interfaces.
+2021-04-13 01:06:16.286  INFO 7216 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-13 01:06:16.294  INFO 7216 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-13 01:06:16.294  INFO 7216 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-13 01:06:16.383  INFO 7216 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-13 01:06:16.383  INFO 7216 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1652 ms
+2021-04-13 01:06:16.547  INFO 7216 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-13 01:06:16.588  INFO 7216 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-13 01:06:16.699  INFO 7216 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-13 01:06:16.800  INFO 7216 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-13 01:06:16.939  INFO 7216 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-13 01:06:16.955  INFO 7216 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-13 01:06:18.384  INFO 7216 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-13 01:06:18.393  INFO 7216 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-13 01:06:18.451  INFO 7216 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-13 01:06:19.242  WARN 7216 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-13 01:06:19.614  INFO 7216 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-13 01:06:19.720  INFO 7216 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-13 01:06:20.016  INFO 7216 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-13 01:06:20.024  INFO 7216 --- [restartedMain] com.qyt.blog.BlogApplication             : Started BlogApplication in 5.941 seconds (JVM running for 7.239)
+2021-04-13 01:06:44.756  INFO 7216 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-13 01:06:44.757  INFO 7216 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-13 01:06:44.758  INFO 7216 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-13 01:06:44.799  INFO 7216 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 01:06:44.894  WARN 7216 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-04-13 01:06:44.905  WARN 7216 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-04-13 01:06:44.913  INFO 7216 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Result : index
+2021-04-13 01:06:44.913  INFO 7216 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:06:50.428  INFO 7216 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/blog/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.blog, args=[34, {}])
+2021-04-13 01:06:50.528  INFO 7216 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : Result : blog
+2021-04-13 01:06:50.528  INFO 7216 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:06:51.411  INFO 7216 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 01:06:51.465  INFO 7216 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 01:06:51.465  INFO 7216 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:07:08.059  INFO 7216 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/blog/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.blog, args=[34, {}])
+2021-04-13 01:07:08.065  INFO 7216 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Result : blog
+2021-04-13 01:07:08.065  INFO 7216 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:07:08.580  INFO 7216 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 01:07:08.615  INFO 7216 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 01:07:08.615  INFO 7216 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:07:24.328  INFO 7216 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.post, args=[Comment(id=null, nickname=admin, email=1498768337@qq.com, content=管理员回复信息, avatar=null, createTime=null, blog=Blog(id=34, title=null, content=null, firstPicture=null, flag=null, views=null, appreciation=false, shareStatement=false, commentStatus=false, published=false, recommend=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null, description=null), replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false), adminComment=false), org.apache.catalina.session.StandardSessionFacade@56c8b52c])
+2021-04-13 01:07:24.518  INFO 7216 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : Result : redirect:/comments/34
+2021-04-13 01:07:24.518  INFO 7216 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:07:24.533  INFO 7216 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 01:07:24.555  INFO 7216 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 01:07:24.556  INFO 7216 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:07:56.802  INFO 7216 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.post, args=[Comment(id=null, nickname=admin, email=1498768337@qq.com, content=回复管理员, avatar=null, createTime=null, blog=Blog(id=34, title=null, content=null, firstPicture=null, flag=null, views=null, appreciation=false, shareStatement=false, commentStatus=false, published=false, recommend=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null, description=null), replyComments=[], parentComment=Comment(id=59, nickname=null, email=null, content=null, avatar=null, createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false), adminComment=false), org.apache.catalina.session.StandardSessionFacade@56c8b52c])
+2021-04-13 01:07:56.952  INFO 7216 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : Result : redirect:/comments/34
+2021-04-13 01:07:56.952  INFO 7216 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:07:56.957  INFO 7216 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 01:07:56.976  INFO 7216 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 01:07:56.976  INFO 7216 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:08:28.972  INFO 7216 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.post, args=[Comment(id=null, nickname=admin, email=1498768337@qq.com, content=管理员回复, avatar=null, createTime=null, blog=Blog(id=34, title=null, content=null, firstPicture=null, flag=null, views=null, appreciation=false, shareStatement=false, commentStatus=false, published=false, recommend=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null, description=null), replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false), adminComment=false), org.apache.catalina.session.StandardSessionFacade@56c8b52c])
+2021-04-13 01:08:29.076  INFO 7216 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : Result : redirect:/comments/34
+2021-04-13 01:08:29.077  INFO 7216 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:08:29.083  INFO 7216 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 01:08:29.102  INFO 7216 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 01:08:29.103  INFO 7216 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:12:00.621  INFO 12776 --- [restartedMain] com.qyt.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_202 on LAPTOP-M67B77RQ with PID 12776 (D:\JavaStudyCode\project-demo\blog\target\classes started by qyt in D:\JavaStudyCode\project-demo\blog)
+2021-04-13 01:12:00.624 DEBUG 12776 --- [restartedMain] com.qyt.blog.BlogApplication             : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-13 01:12:00.624  INFO 12776 --- [restartedMain] com.qyt.blog.BlogApplication             : The following profiles are active: dev
+2021-04-13 01:12:00.688  INFO 12776 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-13 01:12:00.688  INFO 12776 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-13 01:12:01.445  INFO 12776 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-13 01:12:01.507  INFO 12776 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 54 ms. Found 5 JPA repository interfaces.
+2021-04-13 01:12:02.164  INFO 12776 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-13 01:12:02.213  INFO 12776 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-13 01:12:02.213  INFO 12776 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-13 01:12:02.311  INFO 12776 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-13 01:12:02.311  INFO 12776 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1622 ms
+2021-04-13 01:12:02.469  INFO 12776 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-13 01:12:02.503  INFO 12776 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-13 01:12:02.622  INFO 12776 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-13 01:12:02.705  INFO 12776 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-13 01:12:02.831  INFO 12776 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-13 01:12:02.845  INFO 12776 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-13 01:12:03.561  INFO 12776 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-13 01:12:03.571  INFO 12776 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-13 01:12:03.652  INFO 12776 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-13 01:12:04.522  WARN 12776 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-13 01:12:04.718  INFO 12776 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-13 01:12:05.016  INFO 12776 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-13 01:12:05.291  INFO 12776 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-13 01:12:05.299  INFO 12776 --- [restartedMain] com.qyt.blog.BlogApplication             : Started BlogApplication in 5.273 seconds (JVM running for 6.523)
+2021-04-13 01:12:25.755  INFO 12776 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-13 01:12:25.755  INFO 12776 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-13 01:12:25.757  INFO 12776 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-13 01:12:40.015  INFO 12776 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/blog/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.blog, args=[34, {}])
+2021-04-13 01:12:40.095  INFO 12776 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Result : blog
+2021-04-13 01:12:40.095  INFO 12776 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:12:40.588  INFO 12776 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 01:12:40.648  INFO 12776 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 01:12:40.648  INFO 12776 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:12:54.975  INFO 12776 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.post, args=[Comment(id=null, nickname=admin, email=1498768337@qq.com, content=回复, avatar=null, createTime=null, blog=Blog(id=34, title=null, content=null, firstPicture=null, flag=null, views=null, appreciation=false, shareStatement=false, commentStatus=false, published=false, recommend=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null, description=null), replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false), adminComment=false), org.apache.catalina.session.StandardSessionFacade@2517ca81])
+2021-04-13 01:12:55.379  INFO 12776 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : Result : redirect:/comments/34
+2021-04-13 01:12:55.379  INFO 12776 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:12:55.392  INFO 12776 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 01:12:55.416  INFO 12776 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 01:12:55.417  INFO 12776 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:13:58.419  INFO 12776 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.post, args=[Comment(id=null, nickname=admin, email=1498768337@qq.com, content=12, avatar=null, createTime=null, blog=Blog(id=34, title=null, content=null, firstPicture=null, flag=null, views=null, appreciation=false, shareStatement=false, commentStatus=false, published=false, recommend=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null, description=null), replyComments=[], parentComment=Comment(id=61, nickname=null, email=null, content=null, avatar=null, createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false), adminComment=false), org.apache.catalina.session.StandardSessionFacade@2517ca81])
+2021-04-13 01:13:58.577  INFO 12776 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : Result : redirect:/comments/34
+2021-04-13 01:13:58.577  INFO 12776 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:13:58.582  INFO 12776 --- [http-nio-8080-exec-3] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 01:13:58.605  INFO 12776 --- [http-nio-8080-exec-3] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 01:13:58.605  INFO 12776 --- [http-nio-8080-exec-3] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:14:01.894  INFO 12776 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.post, args=[Comment(id=null, nickname=admin, email=1498768337@qq.com, content=12, avatar=null, createTime=null, blog=Blog(id=34, title=null, content=null, firstPicture=null, flag=null, views=null, appreciation=false, shareStatement=false, commentStatus=false, published=false, recommend=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null, description=null), replyComments=[], parentComment=Comment(id=63, nickname=null, email=null, content=null, avatar=null, createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false), adminComment=false), org.apache.catalina.session.StandardSessionFacade@2517ca81])
+2021-04-13 01:14:02.289  INFO 12776 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Result : redirect:/comments/34
+2021-04-13 01:14:02.289  INFO 12776 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:14:02.296  INFO 12776 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 01:14:02.319  INFO 12776 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 01:14:02.319  INFO 12776 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:14:04.632  INFO 12776 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.post, args=[Comment(id=null, nickname=admin, email=1498768337@qq.com, content=12, avatar=null, createTime=null, blog=Blog(id=34, title=null, content=null, firstPicture=null, flag=null, views=null, appreciation=false, shareStatement=false, commentStatus=false, published=false, recommend=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null, description=null), replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false), adminComment=false), org.apache.catalina.session.StandardSessionFacade@2517ca81])
+2021-04-13 01:14:04.811  INFO 12776 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : Result : redirect:/comments/34
+2021-04-13 01:14:04.811  INFO 12776 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:14:04.818  INFO 12776 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 01:14:04.847  INFO 12776 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 01:14:04.847  INFO 12776 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:14:07.762  INFO 12776 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.post, args=[Comment(id=null, nickname=admin, email=1498768337@qq.com, content=12, avatar=null, createTime=null, blog=Blog(id=34, title=null, content=null, firstPicture=null, flag=null, views=null, appreciation=false, shareStatement=false, commentStatus=false, published=false, recommend=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null, description=null), replyComments=[], parentComment=Comment(id=64, nickname=null, email=null, content=null, avatar=null, createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false), adminComment=false), org.apache.catalina.session.StandardSessionFacade@2517ca81])
+2021-04-13 01:14:08.161  INFO 12776 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : Result : redirect:/comments/34
+2021-04-13 01:14:08.162  INFO 12776 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:14:08.166  INFO 12776 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 01:14:08.188  INFO 12776 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 01:14:08.189  INFO 12776 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:14:54.462  INFO 12776 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/blog/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.blog, args=[34, {}])
+2021-04-13 01:14:54.468  INFO 12776 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : Result : blog
+2021-04-13 01:14:54.469  INFO 12776 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:14:54.970  INFO 12776 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 01:14:54.992  INFO 12776 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 01:14:54.992  INFO 12776 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:18:26.110  INFO 1252 --- [restartedMain] com.qyt.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_202 on LAPTOP-M67B77RQ with PID 1252 (D:\JavaStudyCode\project-demo\blog\target\classes started by qyt in D:\JavaStudyCode\project-demo\blog)
+2021-04-13 01:18:26.113 DEBUG 1252 --- [restartedMain] com.qyt.blog.BlogApplication             : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-13 01:18:26.114  INFO 1252 --- [restartedMain] com.qyt.blog.BlogApplication             : The following profiles are active: dev
+2021-04-13 01:18:26.176  INFO 1252 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-13 01:18:26.177  INFO 1252 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-13 01:18:27.028  INFO 1252 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-13 01:18:27.121  INFO 1252 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 5 JPA repository interfaces.
+2021-04-13 01:18:28.184  INFO 1252 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-13 01:18:28.404  INFO 1252 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-13 01:18:28.405  INFO 1252 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-13 01:18:28.609  INFO 1252 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-13 01:18:28.609  INFO 1252 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2431 ms
+2021-04-13 01:18:28.971  INFO 1252 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-13 01:18:29.028  INFO 1252 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-13 01:18:29.172  INFO 1252 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-13 01:18:29.330  INFO 1252 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-13 01:18:29.524  INFO 1252 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-13 01:18:29.549  INFO 1252 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-13 01:18:30.495  INFO 1252 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-13 01:18:30.507  INFO 1252 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-13 01:18:30.580  INFO 1252 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-13 01:18:31.917  WARN 1252 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-13 01:18:32.135  INFO 1252 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-13 01:18:32.263  INFO 1252 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-13 01:18:32.602  INFO 1252 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-13 01:18:32.613  INFO 1252 --- [restartedMain] com.qyt.blog.BlogApplication             : Started BlogApplication in 7.107 seconds (JVM running for 10.041)
+2021-04-13 01:19:17.624  INFO 1252 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-13 01:19:17.624  INFO 1252 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-13 01:19:17.625  INFO 1252 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-13 01:19:39.472  INFO 1252 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/blog/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.blog, args=[34, {}])
+2021-04-13 01:19:39.577  INFO 1252 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : Result : blog
+2021-04-13 01:19:39.578  INFO 1252 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:19:40.085  INFO 1252 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 01:19:40.156  INFO 1252 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 01:19:40.156  INFO 1252 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:19:46.229  INFO 1252 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.post, args=[Comment(id=null, nickname=admin, email=1498768337@qq.com, content=12, avatar=null, createTime=null, blog=Blog(id=34, title=null, content=null, firstPicture=null, flag=null, views=null, appreciation=false, shareStatement=false, commentStatus=false, published=false, recommend=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null, description=null), replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false), adminComment=false), org.apache.catalina.session.StandardSessionFacade@6b0fd220])
+2021-04-13 01:20:34.305  WARN 1252 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m4s677ms329µs800ns).
+2021-04-13 01:21:22.702  WARN 1252 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=48s397ms815µs600ns).
+2021-04-13 01:21:37.496  INFO 1252 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : Result : redirect:/comments/34
+2021-04-13 01:21:37.496  INFO 1252 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:21:37.512  INFO 1252 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 01:21:37.544  INFO 1252 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 01:21:37.544  INFO 1252 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:22:39.570  INFO 1252 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.post, args=[Comment(id=null, nickname=admin, email=1498768337@qq.com, content=12, avatar=null, createTime=null, blog=Blog(id=34, title=null, content=null, firstPicture=null, flag=null, views=null, appreciation=false, shareStatement=false, commentStatus=false, published=false, recommend=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null, description=null), replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false), adminComment=false), org.apache.catalina.session.StandardSessionFacade@6b0fd220])
+2021-04-13 01:22:54.808  INFO 1252 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : Result : redirect:/comments/34
+2021-04-13 01:22:54.808  INFO 1252 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:22:54.815  INFO 1252 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 01:25:12.964  WARN 1252 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m35s465ms599µs800ns).
+2021-04-13 01:27:31.381  INFO 1252 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 01:27:31.381  INFO 1252 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:27:31.382  WARN 1252 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m18s418ms26µs400ns).
+2021-04-13 01:27:32.142  INFO 1252 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-13 01:27:32.143  INFO 1252 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-13 01:27:32.148  INFO 1252 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-13 01:27:32.154  INFO 1252 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-13 01:27:37.332  INFO 13460 --- [restartedMain] com.qyt.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_202 on LAPTOP-M67B77RQ with PID 13460 (D:\JavaStudyCode\project-demo\blog\target\classes started by qyt in D:\JavaStudyCode\project-demo\blog)
+2021-04-13 01:27:37.334 DEBUG 13460 --- [restartedMain] com.qyt.blog.BlogApplication             : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-13 01:27:37.335  INFO 13460 --- [restartedMain] com.qyt.blog.BlogApplication             : The following profiles are active: dev
+2021-04-13 01:27:37.376  INFO 13460 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-13 01:27:37.376  INFO 13460 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-13 01:27:38.215  INFO 13460 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-13 01:27:38.280  INFO 13460 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 5 JPA repository interfaces.
+2021-04-13 01:27:39.101  INFO 13460 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-13 01:27:39.110  INFO 13460 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-13 01:27:39.110  INFO 13460 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-13 01:27:39.209  INFO 13460 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-13 01:27:39.209  INFO 13460 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1832 ms
+2021-04-13 01:27:39.369  INFO 13460 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-13 01:27:39.412  INFO 13460 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-13 01:27:39.509  INFO 13460 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-13 01:27:39.593  INFO 13460 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-13 01:27:39.717  INFO 13460 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-13 01:27:39.732  INFO 13460 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-13 01:27:40.492  INFO 13460 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-13 01:27:40.500  INFO 13460 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-13 01:27:40.558  INFO 13460 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-13 01:27:41.313  WARN 13460 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-13 01:27:41.492  INFO 13460 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-13 01:27:41.767  INFO 13460 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-13 01:27:42.046  INFO 13460 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-13 01:27:42.056  INFO 13460 --- [restartedMain] com.qyt.blog.BlogApplication             : Started BlogApplication in 5.853 seconds (JVM running for 7.894)
+2021-04-13 01:27:47.939  INFO 13460 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-13 01:27:47.939  INFO 13460 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-13 01:27:47.941  INFO 13460 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-04-13 01:27:47.976  INFO 13460 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/blog/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.blog, args=[34, {}])
+2021-04-13 01:27:48.110  INFO 13460 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Result : blog
+2021-04-13 01:27:48.110  INFO 13460 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:27:49.021  INFO 13460 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 01:27:49.112  INFO 13460 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 01:27:49.112  INFO 13460 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:27:55.366  INFO 13460 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.post, args=[Comment(id=null, nickname=12, email=31, content=121231, avatar=null, createTime=null, blog=Blog(id=34, title=null, content=null, firstPicture=null, flag=null, views=null, appreciation=false, shareStatement=false, commentStatus=false, published=false, recommend=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null, description=null), replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false), adminComment=false), org.apache.catalina.session.StandardSessionFacade@3c33b68f])
+2021-04-13 01:27:55.582  INFO 13460 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Result : redirect:/comments/34
+2021-04-13 01:27:55.582  INFO 13460 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:27:55.597  INFO 13460 --- [http-nio-8080-exec-3] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 01:27:55.640  INFO 13460 --- [http-nio-8080-exec-3] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 01:27:55.640  INFO 13460 --- [http-nio-8080-exec-3] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:28:06.355  INFO 13460 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.post, args=[Comment(id=null, nickname=1221, email=3121, content=12, avatar=null, createTime=null, blog=Blog(id=34, title=null, content=null, firstPicture=null, flag=null, views=null, appreciation=false, shareStatement=false, commentStatus=false, published=false, recommend=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null, description=null), replyComments=[], parentComment=Comment(id=69, nickname=null, email=null, content=null, avatar=null, createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false), adminComment=false), org.apache.catalina.session.StandardSessionFacade@3c33b68f])
+2021-04-13 01:28:06.497  INFO 13460 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : Result : redirect:/comments/34
+2021-04-13 01:28:06.497  INFO 13460 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:28:06.503  INFO 13460 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 01:28:06.533  INFO 13460 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 01:28:06.533  INFO 13460 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:28:19.509  INFO 13460 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/blog/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.blog, args=[34, {}])
+2021-04-13 01:28:19.515  INFO 13460 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : Result : blog
+2021-04-13 01:28:19.515  INFO 13460 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:28:20.018  INFO 13460 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 01:28:20.063  INFO 13460 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 01:28:20.063  INFO 13460 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:28:28.276  INFO 13460 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.post, args=[Comment(id=null, nickname=admin, email=1498768337@qq.com, content=12131, avatar=null, createTime=null, blog=Blog(id=34, title=null, content=null, firstPicture=null, flag=null, views=null, appreciation=false, shareStatement=false, commentStatus=false, published=false, recommend=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null, description=null), replyComments=[], parentComment=Comment(id=70, nickname=null, email=null, content=null, avatar=null, createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false), adminComment=false), org.apache.catalina.session.StandardSessionFacade@3c33b68f])
+2021-04-13 01:28:28.673  INFO 13460 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Result : redirect:/comments/34
+2021-04-13 01:28:28.673  INFO 13460 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:28:28.679  INFO 13460 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 01:28:28.709  INFO 13460 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 01:28:28.709  INFO 13460 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:28:32.471  INFO 13460 --- [http-nio-8080-exec-3] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.post, args=[Comment(id=null, nickname=admin, email=1498768337@qq.com, content=大大, avatar=null, createTime=null, blog=Blog(id=34, title=null, content=null, firstPicture=null, flag=null, views=null, appreciation=false, shareStatement=false, commentStatus=false, published=false, recommend=false, createTime=null, updateTime=null, type=null, tags=[], user=null, comments=[], tagIds=null, description=null), replyComments=[], parentComment=Comment(id=-1, nickname=null, email=null, content=null, avatar=null, createTime=null, blog=null, replyComments=[], parentComment=null, adminComment=false), adminComment=false), org.apache.catalina.session.StandardSessionFacade@3c33b68f])
+2021-04-13 01:28:32.626  INFO 13460 --- [http-nio-8080-exec-3] com.qyt.blog.aspect.LogAspect            : Result : redirect:/comments/34
+2021-04-13 01:28:32.626  INFO 13460 --- [http-nio-8080-exec-3] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:28:32.632  INFO 13460 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 01:28:32.663  INFO 13460 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 01:28:32.663  INFO 13460 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:30:01.785  INFO 13460 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/blog/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.blog, args=[34, {}])
+2021-04-13 01:30:01.791  INFO 13460 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Result : blog
+2021-04-13 01:30:01.791  INFO 13460 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 01:30:02.412  INFO 13460 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 01:30:02.479  INFO 13460 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 01:30:02.479  INFO 13460 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 09:40:31.299  INFO 708 --- [restartedMain] com.qyt.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_202 on LAPTOP-M67B77RQ with PID 708 (D:\JavaStudyCode\project-demo\blog\target\classes started by qyt in D:\JavaStudyCode\project-demo\blog)
+2021-04-13 09:40:31.315 DEBUG 708 --- [restartedMain] com.qyt.blog.BlogApplication             : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-13 09:40:31.316  INFO 708 --- [restartedMain] com.qyt.blog.BlogApplication             : The following profiles are active: dev
+2021-04-13 09:40:31.380  INFO 708 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-13 09:40:31.381  INFO 708 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-13 09:40:32.845  INFO 708 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-13 09:40:32.947  INFO 708 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 91 ms. Found 5 JPA repository interfaces.
+2021-04-13 09:40:34.033  INFO 708 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-13 09:40:34.044  INFO 708 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-13 09:40:34.044  INFO 708 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-13 09:40:34.178  INFO 708 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-13 09:40:34.178  INFO 708 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2796 ms
+2021-04-13 09:40:34.388  INFO 708 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-13 09:40:34.477  INFO 708 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-13 09:40:34.723  INFO 708 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-13 09:40:34.879  INFO 708 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-13 09:40:35.080  INFO 708 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-13 09:40:35.102  INFO 708 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-13 09:40:36.387  INFO 708 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-13 09:40:36.398  INFO 708 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-13 09:40:36.459  INFO 708 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-13 09:40:37.511  WARN 708 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-13 09:40:37.929  INFO 708 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-13 09:40:38.044  INFO 708 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-13 09:40:38.674  INFO 708 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-13 09:40:38.683  INFO 708 --- [restartedMain] com.qyt.blog.BlogApplication             : Started BlogApplication in 8.148 seconds (JVM running for 9.891)
+2021-04-13 09:41:27.112  INFO 11352 --- [restartedMain] com.qyt.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_202 on LAPTOP-M67B77RQ with PID 11352 (D:\JavaStudyCode\project-demo\blog\target\classes started by qyt in D:\JavaStudyCode\project-demo\blog)
+2021-04-13 09:41:27.115 DEBUG 11352 --- [restartedMain] com.qyt.blog.BlogApplication             : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-13 09:41:27.115  INFO 11352 --- [restartedMain] com.qyt.blog.BlogApplication             : The following profiles are active: dev
+2021-04-13 09:41:27.170  INFO 11352 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-13 09:41:27.171  INFO 11352 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-13 09:41:27.802  INFO 11352 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-13 09:41:27.868  INFO 11352 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 5 JPA repository interfaces.
+2021-04-13 09:41:28.623  INFO 11352 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-13 09:41:28.632  INFO 11352 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-13 09:41:28.632  INFO 11352 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-13 09:41:28.726  INFO 11352 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-13 09:41:28.726  INFO 11352 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1554 ms
+2021-04-13 09:41:28.876  INFO 11352 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-13 09:41:28.915  INFO 11352 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-13 09:41:29.011  INFO 11352 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-13 09:41:29.094  INFO 11352 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-13 09:41:29.222  INFO 11352 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-13 09:41:29.239  INFO 11352 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-13 09:41:29.954  INFO 11352 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-13 09:41:29.962  INFO 11352 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-13 09:41:30.016  INFO 11352 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-13 09:41:30.756  WARN 11352 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-13 09:41:31.109  INFO 11352 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-13 09:41:31.206  INFO 11352 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-13 09:41:31.486  INFO 11352 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-13 09:41:31.494  INFO 11352 --- [restartedMain] com.qyt.blog.BlogApplication             : Started BlogApplication in 4.96 seconds (JVM running for 6.187)
+2021-04-13 09:45:38.870  INFO 11352 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-13 09:45:38.871  INFO 11352 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-13 09:45:38.873  INFO 11352 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-04-13 09:45:38.932  INFO 11352 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 09:45:39.154  WARN 11352 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-04-13 09:45:39.163  WARN 11352 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-04-13 09:45:39.171  INFO 11352 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Result : index
+2021-04-13 09:45:39.171  INFO 11352 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 09:45:42.253  INFO 11352 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/blog/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.blog, args=[34, {}])
+2021-04-13 09:45:42.676  INFO 11352 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : Result : blog
+2021-04-13 09:45:42.677  INFO 11352 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 09:45:43.557  INFO 11352 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 09:45:43.671  INFO 11352 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 09:45:43.672  INFO 11352 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 09:45:45.887  INFO 11352 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/blog/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.blog, args=[34, {}])
+2021-04-13 09:45:46.007  INFO 11352 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Result : blog
+2021-04-13 09:45:46.007  INFO 11352 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 09:45:46.498  INFO 11352 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 09:45:46.553  INFO 11352 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 09:45:46.554  INFO 11352 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 09:46:50.574  INFO 11352 --- [Thread-11] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-13 09:46:50.576  INFO 11352 --- [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-13 09:46:50.582  INFO 11352 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-04-13 09:46:50.594  INFO 11352 --- [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-04-13 09:46:50.946  INFO 11352 --- [restartedMain] com.qyt.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_202 on LAPTOP-M67B77RQ with PID 11352 (D:\JavaStudyCode\project-demo\blog\target\classes started by qyt in D:\JavaStudyCode\project-demo\blog)
+2021-04-13 09:46:50.946 DEBUG 11352 --- [restartedMain] com.qyt.blog.BlogApplication             : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-13 09:46:50.947  INFO 11352 --- [restartedMain] com.qyt.blog.BlogApplication             : The following profiles are active: dev
+2021-04-13 09:46:51.168  INFO 11352 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-13 09:46:51.194  INFO 11352 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 5 JPA repository interfaces.
+2021-04-13 09:46:51.389  INFO 11352 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-13 09:46:51.390  INFO 11352 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-13 09:46:51.390  INFO 11352 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-13 09:46:51.413  INFO 11352 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-13 09:46:51.413  INFO 11352 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 463 ms
+2021-04-13 09:46:51.466  INFO 11352 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-13 09:46:51.469  INFO 11352 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-04-13 09:46:51.472  INFO 11352 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-04-13 09:46:51.473  INFO 11352 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-13 09:46:51.625  INFO 11352 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-13 09:46:51.625  INFO 11352 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-13 09:46:51.671  INFO 11352 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-13 09:46:52.015  WARN 11352 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'commentController': Injection of resource dependencies failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.qyt.blog.service.BlogService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@javax.annotation.Resource(shareable=true, lookup=, name=, description=, authenticationType=CONTAINER, type=class java.lang.Object, mappedName=)}
+2021-04-13 09:46:52.015  INFO 11352 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-04-13 09:46:52.016  INFO 11352 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-04-13 09:46:52.020  INFO 11352 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-04-13 09:46:52.021  INFO 11352 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-04-13 09:46:52.032  INFO 11352 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-04-13 09:46:52.103 ERROR 11352 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean of type 'com.qyt.blog.service.BlogService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.qyt.blog.service.BlogService' in your configuration.
+
+2021-04-13 09:46:53.645  INFO 11352 --- [restartedMain] com.qyt.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_202 on LAPTOP-M67B77RQ with PID 11352 (D:\JavaStudyCode\project-demo\blog\target\classes started by qyt in D:\JavaStudyCode\project-demo\blog)
+2021-04-13 09:46:53.646 DEBUG 11352 --- [restartedMain] com.qyt.blog.BlogApplication             : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-13 09:46:53.646  INFO 11352 --- [restartedMain] com.qyt.blog.BlogApplication             : The following profiles are active: dev
+2021-04-13 09:46:53.876  INFO 11352 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-13 09:46:53.901  INFO 11352 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 5 JPA repository interfaces.
+2021-04-13 09:46:54.077  INFO 11352 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-13 09:46:54.078  INFO 11352 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-13 09:46:54.078  INFO 11352 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-13 09:46:54.098  INFO 11352 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2021-04-13 09:46:54.098  INFO 11352 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 449 ms
+2021-04-13 09:46:54.171  INFO 11352 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-13 09:46:54.175  INFO 11352 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2021-04-13 09:46:54.178  INFO 11352 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2021-04-13 09:46:54.178  INFO 11352 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-13 09:46:54.343  INFO 11352 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-13 09:46:54.344  INFO 11352 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-13 09:46:54.376  INFO 11352 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-13 09:46:54.778  WARN 11352 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-13 09:46:54.921  INFO 11352 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-13 09:46:54.970  INFO 11352 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-13 09:46:55.172  INFO 11352 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-13 09:46:55.177  INFO 11352 --- [restartedMain] com.qyt.blog.BlogApplication             : Started BlogApplication in 1.575 seconds (JVM running for 329.87)
+2021-04-13 09:46:55.179  INFO 11352 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-04-13 09:46:55.313  INFO 11352 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-13 09:46:55.314  INFO 11352 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-13 09:46:55.315  INFO 11352 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-04-13 09:46:55.321  INFO 11352 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/blog/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.blog, args=[34, {}])
+2021-04-13 09:46:55.401  INFO 11352 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Result : blog
+2021-04-13 09:46:55.401  INFO 11352 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 09:46:55.966  INFO 11352 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 09:46:56.024  INFO 11352 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 09:46:56.025  INFO 11352 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 09:47:08.188  INFO 5556 --- [restartedMain] com.qyt.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_202 on LAPTOP-M67B77RQ with PID 5556 (D:\JavaStudyCode\project-demo\blog\target\classes started by qyt in D:\JavaStudyCode\project-demo\blog)
+2021-04-13 09:47:08.190 DEBUG 5556 --- [restartedMain] com.qyt.blog.BlogApplication             : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-13 09:47:08.191  INFO 5556 --- [restartedMain] com.qyt.blog.BlogApplication             : The following profiles are active: dev
+2021-04-13 09:47:08.229  INFO 5556 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-13 09:47:08.229  INFO 5556 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-13 09:47:08.877  INFO 5556 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-13 09:47:08.954  INFO 5556 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 5 JPA repository interfaces.
+2021-04-13 09:47:09.984  INFO 5556 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-13 09:47:09.998  INFO 5556 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-13 09:47:09.998  INFO 5556 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-13 09:47:10.114  INFO 5556 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-13 09:47:10.114  INFO 5556 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1884 ms
+2021-04-13 09:47:10.294  INFO 5556 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-13 09:47:10.346  INFO 5556 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-13 09:47:10.465  INFO 5556 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-13 09:47:10.560  INFO 5556 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-13 09:47:10.713  INFO 5556 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-13 09:47:10.732  INFO 5556 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-13 09:47:11.541  INFO 5556 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-13 09:47:11.550  INFO 5556 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-13 09:47:11.609  INFO 5556 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-13 09:47:12.399  WARN 5556 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-13 09:47:12.749  INFO 5556 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-13 09:47:12.849  INFO 5556 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-13 09:47:13.134  INFO 5556 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-13 09:47:13.143  INFO 5556 --- [restartedMain] com.qyt.blog.BlogApplication             : Started BlogApplication in 5.518 seconds (JVM running for 6.881)
+2021-04-13 09:47:13.935  INFO 5556 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-13 09:47:13.936  INFO 5556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-13 09:47:13.938  INFO 5556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-04-13 09:47:13.999  INFO 5556 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/blog/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.blog, args=[34, {}])
+2021-04-13 09:47:14.301  INFO 5556 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Result : blog
+2021-04-13 09:47:14.302  INFO 5556 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 09:47:15.418  INFO 5556 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 09:47:15.518  INFO 5556 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 09:47:15.518  INFO 5556 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 09:48:12.758  INFO 5556 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/blog/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.blog, args=[34, {}])
+2021-04-13 09:48:13.191  INFO 5556 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Result : blog
+2021-04-13 09:48:13.191  INFO 5556 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 09:48:13.889  INFO 5556 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 09:48:13.997  INFO 5556 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 09:48:13.997  INFO 5556 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 09:48:34.024  INFO 11668 --- [restartedMain] com.qyt.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_202 on LAPTOP-M67B77RQ with PID 11668 (D:\JavaStudyCode\project-demo\blog\target\classes started by qyt in D:\JavaStudyCode\project-demo\blog)
+2021-04-13 09:48:34.027 DEBUG 11668 --- [restartedMain] com.qyt.blog.BlogApplication             : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-13 09:48:34.027  INFO 11668 --- [restartedMain] com.qyt.blog.BlogApplication             : The following profiles are active: dev
+2021-04-13 09:48:34.096  INFO 11668 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-13 09:48:34.096  INFO 11668 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-13 09:48:34.847  INFO 11668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-13 09:48:34.921  INFO 11668 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 5 JPA repository interfaces.
+2021-04-13 09:48:35.833  INFO 11668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-13 09:48:35.843  INFO 11668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-13 09:48:35.844  INFO 11668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-13 09:48:35.945  INFO 11668 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-13 09:48:35.946  INFO 11668 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1849 ms
+2021-04-13 09:48:36.168  INFO 11668 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-13 09:48:36.247  INFO 11668 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-13 09:48:36.432  INFO 11668 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-13 09:48:36.618  INFO 11668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-13 09:48:36.816  INFO 11668 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-13 09:48:36.831  INFO 11668 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-13 09:48:37.696  INFO 11668 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-13 09:48:37.705  INFO 11668 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-13 09:48:37.772  INFO 11668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-13 09:48:38.683  WARN 11668 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-13 09:48:39.074  INFO 11668 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-13 09:48:39.182  INFO 11668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-13 09:48:39.506  INFO 11668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-13 09:48:39.516  INFO 11668 --- [restartedMain] com.qyt.blog.BlogApplication             : Started BlogApplication in 6.141 seconds (JVM running for 8.035)
+2021-04-13 10:15:54.401  INFO 11668 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-13 10:15:54.401  INFO 11668 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-13 10:15:54.403  INFO 11668 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-04-13 10:15:54.452  INFO 11668 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/blog/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.blog, args=[34, {}])
+2021-04-13 10:15:54.750  INFO 11668 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Result : blog
+2021-04-13 10:15:54.750  INFO 11668 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 10:15:55.721  INFO 11668 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/34, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[34, {}])
+2021-04-13 10:15:55.821  INFO 11668 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 10:15:55.821  INFO 11668 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 10:16:00.502  INFO 11668 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 10:16:00.536  WARN 11668 --- [http-nio-8080-exec-2] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-04-13 10:16:00.545  WARN 11668 --- [http-nio-8080-exec-2] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-04-13 10:16:00.553  INFO 11668 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Result : index
+2021-04-13 10:16:00.553  INFO 11668 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:07:14.035  INFO 14168 --- [restartedMain] com.qyt.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_202 on LAPTOP-M67B77RQ with PID 14168 (D:\JavaStudyCode\project-demo\blog\target\classes started by qyt in D:\JavaStudyCode\project-demo\blog)
+2021-04-13 11:07:14.046 DEBUG 14168 --- [restartedMain] com.qyt.blog.BlogApplication             : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-13 11:07:14.046  INFO 14168 --- [restartedMain] com.qyt.blog.BlogApplication             : The following profiles are active: dev
+2021-04-13 11:07:14.205  INFO 14168 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-13 11:07:14.206  INFO 14168 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-13 11:07:18.207  INFO 14168 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-13 11:07:18.585  INFO 14168 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 340 ms. Found 5 JPA repository interfaces.
+2021-04-13 11:07:21.802  INFO 14168 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-13 11:07:21.844  INFO 14168 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-13 11:07:21.845  INFO 14168 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-13 11:07:22.234  INFO 14168 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-13 11:07:22.235  INFO 14168 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8027 ms
+2021-04-13 11:07:22.895  INFO 14168 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-13 11:07:23.085  INFO 14168 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-13 11:07:23.744  INFO 14168 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-13 11:07:24.185  INFO 14168 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-13 11:07:24.786  INFO 14168 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-13 11:07:24.861  INFO 14168 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-13 11:07:28.541  INFO 14168 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-13 11:07:28.581  INFO 14168 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-13 11:07:28.799  INFO 14168 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-13 11:07:31.830  WARN 14168 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-13 11:07:32.460  INFO 14168 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-13 11:07:33.265  INFO 14168 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-13 11:07:34.757  INFO 14168 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-13 11:07:34.789  INFO 14168 --- [restartedMain] com.qyt.blog.BlogApplication             : Started BlogApplication in 22.721 seconds (JVM running for 26.557)
+2021-04-13 11:08:19.413  INFO 14168 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-13 11:08:19.414  INFO 14168 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-13 11:08:19.420  INFO 14168 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2021-04-13 11:08:19.545  INFO 14168 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:08:19.902  WARN 14168 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-04-13 11:08:19.925  WARN 14168 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-04-13 11:08:19.943  INFO 14168 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Result : index
+2021-04-13 11:08:19.944  INFO 14168 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:08:25.623  INFO 14168 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/0, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[0, Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:08:25.826  INFO 14168 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:08:25.827  INFO 14168 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:08:30.567  INFO 14168 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/blog/31, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.blog, args=[31, {}])
+2021-04-13 11:08:31.036  INFO 14168 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Result : blog
+2021-04-13 11:08:31.036  INFO 14168 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:08:33.350  INFO 14168 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/31, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[31, {}])
+2021-04-13 11:08:33.397  INFO 14168 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 11:08:33.398  INFO 14168 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:08:51.138  INFO 14168 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:08:51.167  INFO 14168 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : Result : index
+2021-04-13 11:08:51.168  INFO 14168 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:08:53.490  INFO 14168 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/0, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[0, Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:08:53.655  INFO 14168 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:08:53.656  INFO 14168 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:09:08.663  INFO 14168 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/blog/25, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.blog, args=[25, {}])
+2021-04-13 11:09:08.796  INFO 14168 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Result : blog
+2021-04-13 11:09:08.797  INFO 14168 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:09:10.436  INFO 14168 --- [http-nio-8080-exec-3] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/25, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[25, {}])
+2021-04-13 11:09:10.440  INFO 14168 --- [http-nio-8080-exec-3] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 11:09:10.441  INFO 14168 --- [http-nio-8080-exec-3] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:10:59.178  INFO 14168 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:10:59.218  INFO 14168 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Result : index
+2021-04-13 11:10:59.218  INFO 14168 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:11:01.178  INFO 14168 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/0, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[0, Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:11:01.187  INFO 14168 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:11:01.187  INFO 14168 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:11:05.214  INFO 14168 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/1, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[1, Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:11:05.226  INFO 14168 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:11:05.226  INFO 14168 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:11:08.162  INFO 14168 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/6, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[6, Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:11:08.177  INFO 14168 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:11:08.177  INFO 14168 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:11:08.840  INFO 14168 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/10, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[10, Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:11:08.850  INFO 14168 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:11:08.851  INFO 14168 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:11:09.410  INFO 14168 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/7, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[7, Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:11:09.418  INFO 14168 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:11:09.418  INFO 14168 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:11:09.897  INFO 14168 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/4, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[4, Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:11:09.909  INFO 14168 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:11:09.909  INFO 14168 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:11:10.764  INFO 14168 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/11, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[11, Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:11:10.786  INFO 14168 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:11:10.788  INFO 14168 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:11:11.425  INFO 14168 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/3, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[3, Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:11:11.433  INFO 14168 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:11:11.434  INFO 14168 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:11:12.944  INFO 14168 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/8, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[8, Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:11:12.952  INFO 14168 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:11:12.953  INFO 14168 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:11:14.353  INFO 14168 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/11, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[11, Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:11:14.360  INFO 14168 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:11:14.360  INFO 14168 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:11:15.449  INFO 14168 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/2, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[2, Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:11:15.457  INFO 14168 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:11:15.457  INFO 14168 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:11:15.748  INFO 14168 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/2, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[2, Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:11:15.758  INFO 14168 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:11:15.758  INFO 14168 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:11:18.526  INFO 14168 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/blog/39, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.blog, args=[39, {}])
+2021-04-13 11:11:18.652  INFO 14168 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : Result : blog
+2021-04-13 11:11:18.653  INFO 14168 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:11:19.824  INFO 14168 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/39, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[39, {}])
+2021-04-13 11:11:19.827  INFO 14168 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 11:11:19.827  INFO 14168 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:11:29.883  INFO 14168 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/1, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[1, Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:11:29.892  INFO 14168 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:11:29.892  INFO 14168 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:11:33.121  INFO 14168 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/1, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[1, Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:11:33.131  INFO 14168 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:11:33.131  INFO 14168 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:11:35.745  INFO 14168 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/1, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[1, Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:11:35.753  INFO 14168 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:11:35.754  INFO 14168 --- [http-nio-8080-exec-6] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:11:39.282  INFO 14168 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:11:39.299  INFO 14168 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : Result : index
+2021-04-13 11:11:39.299  INFO 14168 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:11:47.856  INFO 14168 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:11:47.867  INFO 14168 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : Result : index
+2021-04-13 11:11:47.867  INFO 14168 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:11:52.925  INFO 14168 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:11:52.945  INFO 14168 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : Result : index
+2021-04-13 11:11:52.946  INFO 14168 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:12:06.457  INFO 14168 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:12:06.479  INFO 14168 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : Result : index
+2021-04-13 11:12:06.479  INFO 14168 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:12:21.117  INFO 14168 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.index, args=[Page request [number: 1, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:12:21.129  INFO 14168 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : Result : index
+2021-04-13 11:12:21.129  INFO 14168 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:12:22.980  INFO 14168 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.index, args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:12:22.997  INFO 14168 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Result : index
+2021-04-13 11:12:22.998  INFO 14168 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:12:34.129  INFO 14168 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/0, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[0, Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:12:34.137  INFO 14168 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:12:34.137  INFO 14168 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:12:35.695  INFO 14168 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/1, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[1, Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:12:35.702  INFO 14168 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:12:35.702  INFO 14168 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:12:37.887  INFO 14168 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/6, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[6, Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:12:37.893  INFO 14168 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:12:37.893  INFO 14168 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:12:40.844  INFO 14168 --- [http-nio-8080-exec-3] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/4, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[4, Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:12:40.853  INFO 14168 --- [http-nio-8080-exec-3] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:12:40.853  INFO 14168 --- [http-nio-8080-exec-3] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:12:43.296  INFO 14168 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/2, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[2, Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:12:43.302  INFO 14168 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:12:43.302  INFO 14168 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:17:37.150  INFO 14168 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/2, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[2, Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:17:37.155  INFO 14168 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:17:37.155  INFO 14168 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:17:45.935  INFO 14168 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/1, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[1, Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:17:45.941  INFO 14168 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:17:45.942  INFO 14168 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:17:48.857  INFO 14168 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/2, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[2, Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:17:48.863  INFO 14168 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:17:48.863  INFO 14168 --- [http-nio-8080-exec-9] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:26:32.863  INFO 14992 --- [restartedMain] com.qyt.blog.BlogApplication             : Starting BlogApplication using Java 1.8.0_202 on LAPTOP-M67B77RQ with PID 14992 (D:\JavaStudyCode\project-demo\blog\target\classes started by qyt in D:\JavaStudyCode\project-demo\blog)
+2021-04-13 11:26:32.866 DEBUG 14992 --- [restartedMain] com.qyt.blog.BlogApplication             : Running with Spring Boot v2.4.4, Spring v5.3.5
+2021-04-13 11:26:32.866  INFO 14992 --- [restartedMain] com.qyt.blog.BlogApplication             : The following profiles are active: dev
+2021-04-13 11:26:32.931  INFO 14992 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-13 11:26:32.932  INFO 14992 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-13 11:26:34.577  INFO 14992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-13 11:26:34.785  INFO 14992 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 174 ms. Found 5 JPA repository interfaces.
+2021-04-13 11:26:36.772  INFO 14992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-13 11:26:36.789  INFO 14992 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-13 11:26:36.791  INFO 14992 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-13 11:26:37.000  INFO 14992 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-13 11:26:37.001  INFO 14992 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4068 ms
+2021-04-13 11:26:37.371  INFO 14992 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-13 11:26:37.452  INFO 14992 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-13 11:26:37.673  INFO 14992 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-13 11:26:37.865  INFO 14992 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-13 11:26:38.162  INFO 14992 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-13 11:26:38.197  INFO 14992 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2021-04-13 11:26:39.864  INFO 14992 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-13 11:26:39.884  INFO 14992 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-13 11:26:40.016  INFO 14992 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-13 11:26:41.919  WARN 14992 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-13 11:26:42.714  INFO 14992 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-13 11:26:42.942  INFO 14992 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-04-13 11:26:43.600  INFO 14992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-13 11:26:43.615  INFO 14992 --- [restartedMain] com.qyt.blog.BlogApplication             : Started BlogApplication in 11.391 seconds (JVM running for 12.923)
+2021-04-13 11:27:08.718  INFO 14992 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-13 11:27:08.719  INFO 14992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-13 11:27:08.722  INFO 14992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-13 11:27:08.821  INFO 14992 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/2, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[2, Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:27:08.876  WARN 14992 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-04-13 11:27:09.120  INFO 14992 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:27:09.120  INFO 14992 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:48:00.558  INFO 14992 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/2, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[2, Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:48:00.649  INFO 14992 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:48:00.650  INFO 14992 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:52:28.619  INFO 14992 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/2, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[2, Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:52:28.633  INFO 14992 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:52:28.633  INFO 14992 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:53:24.940  INFO 14992 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/2, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[2, Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:53:24.964  INFO 14992 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:53:24.964  INFO 14992 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:53:27.436  INFO 14992 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/2, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[2, Page request [number: 1, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:53:27.447  INFO 14992 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:53:27.447  INFO 14992 --- [http-nio-8080-exec-8] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:53:29.931  INFO 14992 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/2, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[2, Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:53:29.942  INFO 14992 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:53:29.942  INFO 14992 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:53:33.777  INFO 14992 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/2, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[2, Page request [number: 1, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:53:33.785  INFO 14992 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:53:33.785  INFO 14992 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:53:38.237  INFO 14992 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/blog/30, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.blog, args=[30, {}])
+2021-04-13 11:53:38.887  INFO 14992 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Result : blog
+2021-04-13 11:53:38.887  INFO 14992 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:53:40.590  INFO 14992 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/30, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[30, {}])
+2021-04-13 11:53:40.681  INFO 14992 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 11:53:40.683  INFO 14992 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:53:46.653  INFO 14992 --- [http-nio-8080-exec-3] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/2, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[2, Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 11:53:46.662  INFO 14992 --- [http-nio-8080-exec-3] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 11:53:46.662  INFO 14992 --- [http-nio-8080-exec-3] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:53:48.210  INFO 14992 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/blog/77, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.blog, args=[77, {}])
+2021-04-13 11:53:48.552  INFO 14992 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : Result : blog
+2021-04-13 11:53:48.552  INFO 14992 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 11:53:49.712  INFO 14992 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/77, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[77, {}])
+2021-04-13 11:53:49.715  INFO 14992 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 11:53:49.715  INFO 14992 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 12:00:05.109  INFO 14992 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/types/2, ip=127.0.0.1, classMethod=com.qyt.blog.web.TypeShowController.types, args=[2, Page request [number: 0, size 8, sort: updateTime: DESC], {}])
+2021-04-13 12:00:05.120  INFO 14992 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : Result : types
+2021-04-13 12:00:05.120  INFO 14992 --- [http-nio-8080-exec-10] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 12:00:06.645  INFO 14992 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/blog/77, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.blog, args=[77, {}])
+2021-04-13 12:00:06.995  INFO 14992 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : Result : blog
+2021-04-13 12:00:06.996  INFO 14992 --- [http-nio-8080-exec-4] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 12:00:08.217  INFO 14992 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/77, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[77, {}])
+2021-04-13 12:00:08.220  INFO 14992 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 12:00:08.221  INFO 14992 --- [http-nio-8080-exec-2] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 12:00:24.955  INFO 14992 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/blog/76, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.blog, args=[76, {}])
+2021-04-13 12:00:25.081  INFO 14992 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : Result : blog
+2021-04-13 12:00:25.082  INFO 14992 --- [http-nio-8080-exec-5] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 12:00:26.506  INFO 14992 --- [http-nio-8080-exec-3] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/76, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[76, {}])
+2021-04-13 12:00:26.511  INFO 14992 --- [http-nio-8080-exec-3] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 12:00:26.512  INFO 14992 --- [http-nio-8080-exec-3] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 12:00:33.767  INFO 14992 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/blog/77, ip=127.0.0.1, classMethod=com.qyt.blog.web.IndexController.blog, args=[77, {}])
+2021-04-13 12:00:33.895  INFO 14992 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : Result : blog
+2021-04-13 12:00:33.895  INFO 14992 --- [http-nio-8080-exec-1] com.qyt.blog.aspect.LogAspect            : -----doAfter-----
+2021-04-13 12:00:35.034  INFO 14992 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : Request : LogAspect.RequestLog(url=http://127.0.0.1:8080/comments/77, ip=127.0.0.1, classMethod=com.qyt.blog.web.CommentController.comments, args=[77, {}])
+2021-04-13 12:00:35.037  INFO 14992 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : Result : blog :: commentList
+2021-04-13 12:00:35.037  INFO 14992 --- [http-nio-8080-exec-7] com.qyt.blog.aspect.LogAspect            : -----doAfter-----

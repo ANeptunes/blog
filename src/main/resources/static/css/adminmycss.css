@@ -1,0 +1,248 @@
+body {
+    background: url("../images/bg1.jpg") no-repeat center fixed;
+    background-size: cover;
+}
+
+.my-padded-minier {
+    padding: 0.15em !important;
+}
+
+.my-padded-mini {
+    padding-top: 0.15em !important;
+    padding-bottom: 0.15em !important;
+}
+
+.my-padded-small {
+    padding: 0.5em 0.5em !important;
+}
+
+
+.my-padded {
+    padding-right: 3em !important;
+    padding-bottom: 2em !important;
+}
+
+.my-padded-th-mini {
+    padding-top: 0.2em !important;
+    padding-bottom: 0.2em !important;
+}
+
+.my-logo {
+    margin-left: 60px !important;
+    margin-right: 60px !important;
+}
+
+.my-search {
+    margin-right: 60px !important;
+}
+
+.my-search-border {
+    width: 150px;
+    height: 30px;
+    border: 1px white solid !important;
+    border-radius: 0 50% 0 50% !important;
+}
+
+.my-footer-image {
+    width: 115px;
+}
+
+.my-padded-tb-mini {
+    padding-top: 0.2em !important;
+    padding-bottom: 0.2em !important;
+}
+
+.my-padded-tb-tiny {
+    padding-top: 0.3em !important;
+    padding-bottom: 0.3em !important;
+}
+
+.my-padded-tb-small {
+    padding-top: 0.5em !important;
+    padding-bottom: 0.5em !important;
+}
+
+.my-padded-tb {
+    padding-top: 1em !important;
+    padding-bottom: 1em !important;
+}
+
+.my-padded-tb-large {
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
+}
+
+.my-padded-tb-big {
+    padding-top: 3em !important;
+    padding-bottom: 3em !important;
+}
+
+.my-padded-tb-massive {
+    padding-top: 4.5em !important;
+    padding-bottom: 4.5em !important;
+}
+
+.my-padded-lr-responsive {
+    padding-left: 4em !important;
+    padding-right: 4em !important;
+}
+
+.my-margin-tb-mini {
+    margin-top: 0.2em !important;
+    margin-bottom: 0.2em !important;
+}
+
+.my-margin-tb-tiny {
+    margin-top: 0.3em !important;
+    margin-bottom: 0.3em !important;
+}
+
+.my-margin-tb-small {
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
+}
+
+.my-margin-top-small {
+    margin-top: 0.5em !important;
+}
+
+.my-margin-top {
+    margin-top: 1em !important;
+}
+
+.my-margin-top-large {
+    margin-top: 2em !important;
+}
+
+.my-margin-bottom-small {
+    margin-bottom: 0.5em !important;
+}
+
+/* -----text----- */
+.my-text {
+    font-weight: 300 !important;
+    letter-spacing: 1px !important;
+    line-height: 1.8 !important;
+    color: #333 !important;
+}
+
+.my-text-sm {
+    font-weight: 300 !important;
+    letter-spacing: 0.8px !important;
+    line-height: 1.2 !important;
+    color: #333 !important;
+}
+
+.my-text-thin {
+    font-weight: 300 !important;
+}
+
+.my-text-small {
+    font-weight: 500 !important;
+}
+
+.my-text-spaced {
+    letter-spacing: 1px !important;
+}
+
+.my-text-lined {
+    margin-top: 50px;
+    line-height: 1.8;
+}
+
+/* -----opacity----- */
+.my-opacity-mini {
+    opacity: 0.8 !important;
+}
+
+.my-opacity-tiny {
+    opacity: 0.6 !important;
+}
+
+.my-opacity-small {
+    opacity: 0.3 !important;
+}
+
+nav,footer{
+    /*opacity: 0.8 !important;*/
+}
+
+div{
+    /*opacity: 0.98 !important;*/
+}
+
+.my-inline-block {
+    display: inline-block !important;
+}
+
+.my-container {
+    max-width: 72em !important;
+    margin: auto !important;
+}
+
+.my-container-small {
+    max-width: 65em !important;
+    margin: auto !important;
+}
+
+/* -----color----- */
+.my-color {
+    color: #333 !important;
+}
+
+.my-teal{
+    color: #00b5ad;
+}
+
+/* -----shadow----- */
+.my-shadow-small {
+    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6) !important;
+    -moz-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6) !important;
+}
+
+/* -----汉堡菜单的定位----- */
+.my-sidebar-right-top {
+    position: absolute;
+    top: 0px;
+    right: 0;
+}
+
+.my-mobile-show {
+    display: none !important;
+}
+
+/* -----position----- */
+.my-fixed {
+    position: fixed !important;
+}
+
+.my-right-bottom {
+    bottom: 0 !important;
+    right: 0 !important;
+    z-index: 10 !important;
+}
+
+@media screen and (max-width: 768px) {
+    .my-mobile-hide {
+        display: none !important;
+    }
+
+    .my-mobile-show {
+        display: block !important;
+    }
+
+    .my-padded-lr-responsive {
+        padding-left: 1.5em !important;
+        padding-right: 1.5em !important;
+    }
+
+    .my-mobile-padded-clear {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .my-mobile-width {
+        width: 100% !important;
+    }
+}

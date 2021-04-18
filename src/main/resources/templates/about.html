@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/mycss.css" th:href="@{/css/mycss.css}">
+    <link rel="stylesheet" href="/css/pjaxLoad.css" th:href="@{/css/pjaxLoad.css}">
+</head>
+
+<body>
+    <div id="pjax-container">
+
+        <div class="loading" style="display: none;"> <div id="loader"></div></div>
+
+        <!-- 导航栏 -->
+        <nav class="ui inverted attached segment my-padded-th-mini my-shadow-small">
+            <div class="ui container">
+                <div class="ui inverted secondary stackable menu">
+                    <a href="#" th:href="@{/}"><h2 class="ui teal header item">Blog</h2></a>
+                    <a href="#" th:href="@{/home}" class="item my-item my-mobile-hide"><i class="home icon"></i>首页</a>
+                    <a href="#" th:href="@{/types/0}" class="item my-item my-mobile-hide"><i class="idea icon"></i>分类</a>
+                    <a href="#" th:href="@{/tags/0}" class="item my-item my-mobile-hide"><i class="tags icon"></i>标签</a>
+                    <a href="#" th:href="@{/archives}" class="item my-item my-mobile-hide"><i class="clone icon"></i>归档</a>
+                    <a href="#" th:href="@{/about}" class="active item my-item my-mobile-hide"><i class="info icon"></i>关于我</a>
+                    <div class="right item my-item my-mobile-hide">
+                        <form id="search-form" name="search" action="#" th:action="@{/search}" method="post" target="_blank">
+                            <div class="ui inverted transparent icon input">
+                                <input type="text" name="query" placeholder="Search..." th:value="${query}" autocomplete="off">
+                                <i onclick="document.forms['search'].submit()" class="search link icon"></i>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <a href="#" id="menu_toggle" class="ui menu black icon button my-sidebar-right-top my-mobile-show">
+                <i class="sidebar icon"></i>
+            </a>
+        </nav>
+
+        <!-- 中间内容 -->
+        <div class="my-container my-padded-tb-big animate__animated animate__fadeIn">
+            <div class="ui container">
+                <div class="ui stackable grid">
+                    <div class="eleven wide column">
+                        <div class="ui segment">
+                            <img src="https://picsum.photos/id/505/900/670" alt="" class="ui rounded image">
+                        </div>
+                    </div>
+                    <div class="five wide column">
+                        <div class="ui top attached segment">
+                            <div class="ui header">关于我</div>
+                        </div>
+                        <div class="ui attached segment">
+                            <p class="my-text-sm">一个普通本科大三学生,java技术渣渣,爱编程,爱篮球.</p>
+                            <p class="my-text-sm">年轻的时候受点委屈，恨不得全世界的人都来安慰我。长大后却学会将苦难不动声色地自己消化.大概成长就是这样，越长大越沉默.</p>
+                            <p class="my-text-sm">时光如水，从容依旧，从不因为任何人或事而稍做停歇，而我们，拼命的追逐着，不停的忙碌着.</p>
+                        </div>
+                        <div class="ui center aligned attached segment">
+                            <div class="ui orange basic label">编程</div>
+                            <div class="ui orange basic label">电影</div>
+                            <div class="ui orange basic label">旅游</div>
+                            <div class="ui orange basic label">运动</div>
+                        </div>
+                        <div class="ui center aligned attached segment">
+                            <div class="ui teal basic left pointing label my-margin-tb-tiny">Java</div>
+                            <div class="ui teal basic left pointing label my-margin-tb-tiny">Mybatis</div>
+                            <div class="ui teal basic left pointing label my-margin-tb-tiny">Spring</div>
+                            <div class="ui teal basic left pointing label my-margin-tb-tiny">SpringMvc</div>
+                            <div class="ui teal basic left pointing label my-margin-tb-tiny">SpringBoot</div>
+                            <div class="ui teal basic left pointing label my-margin-tb-tiny">SpringCloud</div>
+                        </div>
+                        <div class="ui center aligned attached segment">
+                            <a href="#" class="ui circular icon button"><i class="github icon"></i></a>
+                            <a href="#" id="wechat" class="ui circular icon button"><i class="weixin icon"></i></a>
+                            <a href="#" id="qq" class="ui circular icon button" data-content="1498768337" data-position="bottom left"><i class="qq icon"></i></a>
+                        </div>
+                        <div id="wechatQRCode" class="ui flowing popup transition hidden">
+                            <img src="../static/images/wechat.png" th:src="@{/images/wechat.png}" alt="" class="ui rounded image" style="width:110px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部footer -->
+        <footer th:replace="_fragments :: footer" class="ui inverted vertical segment my-padded-tb-massive">
+            <div class="ui center aligned container">
+                <div class="ui inverted divided stackable grid">
+                    <div class="three wide column">
+                        <div class="ui inverted link list">
+                            <div class="item">
+                                <img src="../static/images/wechat.png" th:src="@{/images/wechat.png}" class="ui rounded image my-footer-image" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="three wide column">
+                        <h4 class="ui inverted header my-text-thin my-text-spaced">最新博客</h4>
+                        <div class="ui inverted link list" th:fragment="newBlogList">
+                            <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item" th:each="blog : ${newblogs}" th:text="${blog.title}">数据结构不难</a>
+                        </div>
+                    </div>
+                    <div class="three wide column">
+                        <h4 class="ui inverted header my-text-thin my-text-spaced">联系我</h4>
+                        <div class="ui inverted link list">
+                            <a href="" class="item">Email: 1498768337@qq.com</a>
+                            <a href="" class="item">QQ: 1498768337</a>
+                        </div>
+                    </div>
+                    <div class="seven wide column">
+                        <h4 class="ui inverted header my-text-thin my-text-spaced">Bolg</h4>
+                        <p class="my-text-thin my-text-spaced my-opacity-mini">
+                            这是我的一个个人博客,在这里会分享java技术相关的问题,大家可以在这里学习分享自己的学习历程和经验...</p>
+                    </div>
+                </div>
+                <div class="ui inverted section divider"></div>
+                <p class="my-text-thin my-text-lined my-text-spaced my-opacity-tiny">CopyRight©2021-2022 Blog Designed by
+                    QiuYongTu</p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+        <script src="https://cdn.bootcss.com/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
+        <script type="text/javascript" color="255,250,250" opacity='0.95' zIndex="-2" count="130"  src="//cdn.bootcss.com/canvas-nest.js/1.0.1/canvas-nest.min.js"></script>
+        <script>
+
+            $('#menu_toggle').click(function () {
+                $('.my-item').toggleClass('my-mobile-hide');
+            });
+
+            $('#wechat').popup({
+                popup: $('#wechatQRCode'),
+                on: 'hover',
+                position: 'top center'
+            });
+
+            $('#qq').popup();
+
+            $('#newblog-container').load(/*[[@{/footer/newblog}]]*/"/footer/newblog");
+
+        </script>
+    </div>
+    <!--适配移动端和电脑端-->
+    <script type="text/javascript">
+        var browser = {
+            versions: function () {
+                var u = navigator.userAgent, app = navigator.appVersion;
+                return {     //移动终端浏览器版本信息
+                    trident: u.indexOf('Trident') > -1, //IE内核
+                    presto: u.indexOf('Presto') > -1, //opera内核
+                    webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                    gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+                    mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                    ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+                    android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或uc浏览器
+                    iPhone: u.indexOf('iPhone') > -1, //是否为iPhone或者QQHD浏览器
+                    iPad: u.indexOf('iPad') > -1, //是否iPad
+                    webApp: u.indexOf('Safari') == -1 //是否web应用程序，没有头部与底部
+                };
+            }(),
+            language: (navigator.browserLanguage || navigator.language).toLowerCase()
+        };
+        if (browser.versions.mobile) {
+
+        }else if(!browser.versions.mobile){
+            //设置电脑端显示网易云音乐插件
+            onload = function () {
+
+            };
+
+            var script1 = document.createElement('script');
+            script1.type = 'text/javascript';
+            script1.src = '\\js\\snow.js';
+
+            var script2 = document.createElement('script');
+            script2.type = 'text/javascript';
+            script2.src = '\\js\\click_show_text.js';
+
+
+            /*live-2D*/
+            var script5 = document.createElement('script');
+            script5.type = 'text/javascript';
+            script5.src = '\\js\\autoload.js';
+
+            $('body').append(script5);
+            $('body').append(script1);
+            $('body').append(script2);
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).pjax('a[target!=_blank]', '#pjax-container', {fragment: '#pjax-container',timeout: 10000}); //#wrap为刷新的id
+        $(document).on('pjax:send', function() {
+            $(".loading").css("display", "block");
+            //预加载函数可写在这里
+        });
+
+        $(document).on('pjax:complete', function() {
+            //回调函数
+            if( $('pre').length ){ prettyPrint(); }
+            $(".loading").css("display", "none");
+            //pjax加载结束的回调函数 解决js无法定位的问题
+            //重新定位容器内容的函数写在这里
+        });
+    </script>
+</body>
+
+</html>

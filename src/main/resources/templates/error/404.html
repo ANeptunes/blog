@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="ThemeBucket">
+        <link rel="shortcut icon" href="#" type="image/png">
+
+        <title>404 Page</title>
+
+        <link href="../../static/css/error/style.css" th:href="@{/css/error/style.css}" rel="stylesheet">
+        <link href="../../static/css/error/style-responsive.css" th:href="@{/css/error/style-responsive.css}" rel="stylesheet">
+
+    </head>
+
+    <body class="error-page">
+
+        <section>
+            <div class="container ">
+
+                <section class="error-wrapper text-center">
+                    <h1><img alt="" th:src="@{/images/404-error.png}"></h1>
+                    <h2>page not found</h2>
+                    <h3>We Couldn’t Find This Page</h3>
+                    <a class="back-btn" th:href="@{/}"> Back To Home</a>
+                </section>
+
+            </div>
+        </section>
+
+    </body>
+</html>
